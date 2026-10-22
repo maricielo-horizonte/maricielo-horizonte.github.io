@@ -1,0 +1,429 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243247;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
+/* MENU DE NAVEGACION */
+.navbar {
+    background-color: #12345a;
+    padding: 16px 0;
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 0.3px;
+}
+
+.nav-link {
+    margin-left: 12px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #83d8ff;
+}
+
+/* PRESENTACION PRINCIPAL */
+.hero {
+    background: linear-gradient(135deg, #12345a, #176b87);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiqueta {
+    color: #a8e5ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.hero p:not(.etiqueta) {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+}
+
+/* BOTONES */
+.btn-principal {
+    display: inline-block;
+    background-color: #f2b84b;
+    color: #18304b;
+    font-weight: bold;
+    border: 2px solid #f2b84b;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #ffd477;
+    border-color: #ffd477;
+    color: #18304b;
+    transform: translateY(-2px);
+}
+
+/* SECCIONES */
+.seccion {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.seccion h2 {
+    text-align: center;
+    color: #12345a;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+#nosotros p {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.servicios {
+    background-color: #f1f6fb;
+}
+
+.texto-seccion {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #536477;
+}
+
+/* TARJETAS: CSS GRID */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 14px;
+    border: 1px solid #dce6f0;
+    box-shadow: 0 5px 18px rgba(18, 52, 90, 0.08);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(18, 52, 90, 0.14);
+}
+
+.icono {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+}
+
+.tarjeta h3 {
+    color: #176b87;
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+}
+
+.tarjeta p {
+    margin-bottom: 0;
+    color: #536477;
+}
+
+/* FORMULARIO */
+#formulario {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8fafc;
+    border: 1px solid #dce6f0;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(18, 52, 90, 0.06);
+}
+
+.form-label {
+    color: #12345a;
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #176b87;
+    box-shadow: 0 0 0 0.2rem rgba(23, 107, 135, 0.15);
+}
+
+.mensaje {
+    font-weight: bold;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* ADAPTACION A TABLETS Y CELULARES */
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 0;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .seccion {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    #formulario {
+        padding: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .hero p:not(.etiqueta) {
+        font-size: 1rem;
+    }
+}
+
+.titulo-alternativo {
+    color: #7a5cff;
+}
+
+/* Ordenar los botones de bienvenida */
+#inicio #btnTexto,
+#inicio #btnColor {
+    display: block;
+    margin: 12px auto;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+#inicio .btn-principal {
+    display: block;
+    width: fit-content;
+    margin: 12px auto 0;
+}
+
+/* Efecto interactivo en las tarjetas */
+.tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Diseño de preguntas frecuentes */
+.pregunta-frecuente {
+    margin: 15px 0;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.pregunta {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background-color: #173b63;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pregunta:hover {
+    background-color: #245681;
+}
+
+.respuesta {
+    margin: 0;
+    padding: 16px;
+    color: #334155;
+    background-color: #f4f7fb;
+    line-height: 1.6;
+}
+
+.respuesta {
+    display: none;
+}
+
+/* Botones para conocer más sobre las carreras */
+.btn-mas {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #173b63;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.btn-mas:hover {
+    background-color: #245681;
+    transform: translateY(-2px);
+}
+
+/* Información adicional de las carreras */
+.detalle-carrera {
+    margin-top: 12px;
+    padding: 14px;
+    border-left: 4px solid #f2c94c;
+    border-radius: 6px;
+    background-color: #f4f7fb;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Tarjetas giratorias */
+.tarjetas-giro {
+    align-items: stretch;
+}
+
+.tarjeta-giro {
+    position: relative;
+    min-height: 270px;
+    padding: 0;
+    border: 0;
+    border-radius: 14px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: center;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.cara-tarjeta,
+.reverso-tarjeta {
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 22px;
+    border: 1px solid #d9e2ec;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.5s ease;
+}
+
+.cara-tarjeta {
+    transform: rotateY(0deg);
+}
+
+.reverso-tarjeta {
+    background: #173b63;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.tarjeta-giro.girada .cara-tarjeta {
+    transform: rotateY(-180deg);
+}
+
+.tarjeta-giro.girada .reverso-tarjeta {
+    transform: rotateY(0deg);
+}
+
+.tarjeta-giro h3,
+.tarjeta-giro p {
+    margin: 0;
+}
+
+.tarjeta-giro .icono {
+    font-size: 32px;
+}
+
+.tarjeta-giro .indicacion {
+    color: #b8860b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tarjeta-giro .reverso-tarjeta .indicacion {
+    color: #ffdf70;
+}
+
+.tarjeta-giro:focus-visible {
+    outline: 3px solid #e5b93f;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cara-tarjeta,
+    .reverso-tarjeta {
+        transition: none;
+    }
+}

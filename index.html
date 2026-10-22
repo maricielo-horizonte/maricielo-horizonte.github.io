@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce los servicios académicos del Instituto Técnico Horizonte.">
+    <title>Instituto Técnico Horizonte</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado y menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#inicio">
+                    Instituto Horizonte
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false"
+                    aria-label="Mostrar menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios académicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preguntas">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Registro</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Inicio -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <p class="etiqueta">Formación para el futuro</p>
+                <h1>Bienvenidos al Instituto Técnico Horizonte</h1>
+                <p>
+                    Descubre nuestros servicios académicos y encuentra
+                    nuevas oportunidades para tu desarrollo profesional.
+                </p>
+                <p id="textoBienvenida">Bienvenido al Instituto Técnico Horizonte</p>
+
+                <button type="button" id="btnTexto" class="btn btn-primary">
+                  Cambiar mensaje
+                </button>
+
+                <button type="button" id="btnColor" class="btn btn-primary">
+                Cambiar color del título
+                </button> 
+
+                <a href="#servicios" class="btn btn-principal">
+                    Conocer nuestros servicios
+                </a>
+            </div>
+        </section>
+
+        <!-- Presentación -->
+        <section id="nosotros" class="seccion container">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                El Instituto Técnico Horizonte es una institución ficticia
+                de formación técnica superior, creada para este proyecto.
+                Nuestra propuesta busca ofrecer información académica clara
+                y facilitar el contacto con las personas interesadas.
+            </p>
+        </section>
+
+        <!-- ¿Por qué elegirnos? -->
+<section id="porque-elegirnos" class="seccion container">
+    <h2>¿Por qué elegirnos?</h2>
+    <p class="texto-seccion">
+        En el Instituto Técnico Horizonte promovemos el aprendizaje,
+        el desarrollo de habilidades y la preparación para el futuro.
+    </p>
+
+    <div class="tarjetas tarjetas-giro">
+
+    <button type="button" class="tarjeta-giro" aria-pressed="false">
+        <span class="cara-tarjeta">
+            <span class="icono">📚</span>
+            <h3>Formación práctica</h3>
+            <p>Aprende y desarrolla habilidades para tu futuro.</p>
+            <span class="indicacion">Pulsa para descubrir más ↻</span>
+        </span>
+        <span class="reverso-tarjeta">
+            <h3>Aprende haciendo</h3>
+            <span>Desarrolla conocimientos y habilidades útiles para afrontar nuevos retos profesionales.</span>
+            <span class="indicacion">Pulsa para volver ↻</span>
+        </span>
+    </button>
+
+    <button type="button" class="tarjeta-giro" aria-pressed="false">
+        <span class="cara-tarjeta">
+            <span class="icono">💡</span>
+            <h3>Aprendizaje continuo</h3>
+            <p>Descubre nuevas ideas y fortalece tus capacidades.</p>
+            <span class="indicacion">Pulsa para descubrir más ↻</span>
+        </span>
+        <span class="reverso-tarjeta">
+            <h3>Sigue creciendo</h3>
+            <span>Explora nuevos conocimientos y aprende algo nuevo con cada experiencia.</span>
+            <span class="indicacion">Pulsa para volver ↻</span>
+        </span>
+    </button>
+
+    <button type="button" class="tarjeta-giro" aria-pressed="false">
+        <span class="cara-tarjeta">
+            <span class="icono">🚀</span>
+            <h3>Preparación para el futuro</h3>
+            <p>Explora oportunidades para alcanzar tus metas.</p>
+            <span class="indicacion">Pulsa para descubrir más ↻</span>
+        </span>
+        <span class="reverso-tarjeta">
+            <h3>Avanza hacia tus metas</h3>
+            <span>Fortalece tus capacidades y descubre posibilidades para tu desarrollo profesional.</span>
+            <span class="indicacion">Pulsa para volver ↻</span>
+        </span>
+    </button>
+
+</div>
+</section>
+
+        <!-- Servicios académicos -->
+        <section id="servicios" class="seccion servicios">
+            <div class="container">
+                <h2>Nuestros servicios académicos</h2>
+                <p class="texto-seccion">
+                    Explora las áreas de formación que presentamos como ejemplo.
+                </p>
+
+                <div class="tarjetas">
+                    <article class="tarjeta">
+                        <span class="icono">💻</span>
+                        <h3>Informática</h3>
+                        <p>
+                            Información sobre formación en herramientas
+                            digitales y tecnología.
+                        </p>
+                        <button type="button" class="btn-mas" data-carrera="informatica">
+                        Conocer más
+                        </button>
+
+                        <p class="detalle-carrera" id="detalle-informatica" hidden>
+                        Descubre conceptos de programación, herramientas digitales
+                        y soluciones tecnológicas para el entorno profesional.
+                      </p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <span class="icono">📊</span>
+                        <h3>Administración</h3>
+                        <p>
+                            Información sobre organización, gestión
+                            y procesos administrativos.
+                        </p>
+                        <button type="button" class="btn-mas" data-carrera="administracion">
+                        Conocer más
+                        </button>
+
+                        <p class="detalle-carrera" id="detalle-administracion" hidden>
+                        Conoce aspectos de organización, gestión de recursos,
+                        planificación y procesos administrativos.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <span class="icono">⚙️</span>
+                        <h3>Formación técnica</h3>
+                        <p>
+                            Orientación sobre alternativas de aprendizaje
+                            y desarrollo de habilidades técnicas.
+                        </p>
+                        <button type="button" class="btn-mas" data-carrera="tecnica">
+                        Conocer más
+                       </button>
+
+                       <p class="detalle-carrera" id="detalle-tecnica" hidden>
+                       Explora conocimientos técnicos y habilidades prácticas
+                       orientadas al desarrollo profesional.
+                      </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+<section id="preguntas" class="seccion container">
+    <h2>Preguntas frecuentes</h2>
+    <p class="texto-seccion">
+        Resuelve tus dudas sobre nuestro instituto.
+    </p>
+
+    <div class="pregunta-frecuente">
+        <button type="button" class="pregunta">
+            ¿Qué ofrece el Instituto Técnico Horizonte?
+        </button>
+        <p class="respuesta">
+            Ofrece información sobre áreas de formación técnica
+            y oportunidades de aprendizaje.
+        </p>
+    </div>
+
+    <div class="pregunta-frecuente">
+        <button type="button" class="pregunta">
+            ¿Cómo puedo solicitar información?
+        </button>
+        <p class="respuesta">
+            Puedes completar el formulario de contacto
+            que aparece en la sección Registro.
+        </p>
+    </div>
+
+    <div class="pregunta-frecuente">
+        <button type="button" class="pregunta">
+            ¿Cómo conozco los servicios académicos?
+        </button>
+        <p class="respuesta">
+            Visita la sección Servicios académicos para
+            conocer las áreas de formación presentadas.
+        </p>
+    </div>
+</section>
+
+        <!-- Formulario de registro -->
+        <section id="contacto" class="seccion container">
+            <h2>Solicita información</h2>
+            <p class="texto-seccion">
+                Completa el formulario para consultar nuestros servicios.
+            </p>
+
+            <form id="formulario" method="post">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">
+                        Nombres y apellidos
+                    </label>
+                    <input type="text" id="nombre" name="nombre"
+                        class="form-control" required minlength="3"
+                        placeholder="Escribe tus nombres y apellidos">
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo" class="form-label">
+                        Correo electrónico
+                    </label>
+                    <input type="email" id="correo" name="correo"
+                        class="form-control" required
+                        placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="servicio" class="form-label">
+                        Servicio académico de interés
+                    </label>
+                    <select id="servicio" name="servicio"
+                        class="form-select" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="informatica">Informática</option>
+                        <option value="administracion">Administración</option>
+                        <option value="formacion">Formación técnica</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-principal">
+                    Enviar solicitud
+                </button>
+
+                <p id="mensaje" class="mensaje mt-3"
+                    role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>Instituto Técnico Horizonte</p>
+            <p>Proyecto académico de desarrollo web | 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript propio -->
+    <script src="script.js"></script>
+</body>
+</html>
