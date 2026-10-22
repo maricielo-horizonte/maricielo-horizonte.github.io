@@ -8,8 +8,10 @@ formulario.addEventListener("submit", function (evento) {
     const correo = document.getElementById("correo").value.trim();
     const servicio = document.getElementById("servicio").value;
 
-    if (nombre.trim().split(/\s+/).length < 2) {
-    mensaje.textContent = "Escribe tus nombres y apellidos.";
+    const partesNombre = nombre.trim().split(/\s+/);
+
+    if (nombre.trim().split(/\s+/).length < 3) {
+    mensaje.textContent = "Escribe tu nombre y tus dos apellidos.";
     mensaje.style.color = "#b42318";
     return;
     }
